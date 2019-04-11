@@ -1,7 +1,16 @@
 shader_type canvas_item;
 uniform vec2 resolution = vec2(10, 10);
 
+vec4 get_sample(vec2 offset, vec2 output_res, vec2 screen_uv, sampler2D screen_tex){
+	vec2 sample = floor(screen_uv * output_res + offset) / output_res;
+	return textureLod(screen_tex, sample, 0.0).rgba;
+}
+
 void fragment() {
-	vec2 sample = floor(SCREEN_UV * resolution + vec2(0.5, 0.5)) / resolution;
-	COLOR = textureLod(SCREEN_TEXTURE, sample, 0.0).rgba;
+	vec4 sample = get_sample(vec2(0.5, 0.5), resolution, SCREEN_UV, SCREEN_TEXTURE);
+	sample += get_sample(vec2(0.5, .25), resolution, SCREEN_UV, SCREEN_TEXTURE);
+	sample += get_sample(vec2(0.5, .75), resolution, SCREEN_UV, SCREEN_TEXTURE);
+	sample += get_sample(vec2(.25, 0.5), resolution, SCREEN_UV, SCREEN_TEXTURE);
+	sample += get_sample(vec2(.75, 0.5), resolution, SCREEN_UV, SCREEN_TEXTURE);
+	COLOR = sample / vec4(5, 5, 5, 1);
 }
