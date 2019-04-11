@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Environment/Streets/Brick_Wall.vox" type="ArrayMesh" id=1]
+[ext_resource path="res://Environment/Streets/Brick_Wall_Corner.vox" type="ArrayMesh" id=2]
+[ext_resource path="res://Environment/Streets/Cement_Floor.vox" type="ArrayMesh" id=3]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.5, 0.5, 0.5 )
+
+[node name="StreetsTiles" type="Spatial"]
+
+[node name="Brick_Wall" type="MeshInstance" parent="."]
+editor/display_folded = true
+mesh = ExtResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Brick_Wall"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Brick_Wall/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+shape = SubResource( 1 )
+
+[node name="Brick_Wall_Corner" type="MeshInstance" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Brick_Wall_Corner"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Brick_Wall_Corner/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+shape = SubResource( 1 )
+
+[node name="Cement_Floor" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Cement_Floor"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Cement_Floor/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+shape = SubResource( 1 )
+

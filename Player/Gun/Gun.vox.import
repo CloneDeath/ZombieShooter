@@ -1,0 +1,14 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/Gun.vox-104b260bd690ceb814901f2fcb9d908c.mesh"
+
+[deps]
+
+source_file="res://Player/Gun/Gun.vox"
+dest_files=[ "res://.import/Gun.vox-104b260bd690ceb814901f2fcb9d908c.mesh" ]
+
+[params]
+
+Scale=0.01

@@ -1,0 +1,14 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/Brick_Wall_Corner.vox-5528a37082c6d0598077510b2cf07985.mesh"
+
+[deps]
+
+source_file="res://Environment/Streets/Brick_Wall_Corner.vox"
+dest_files=[ "res://.import/Brick_Wall_Corner.vox-5528a37082c6d0598077510b2cf07985.mesh" ]
+
+[params]
+
+Scale=0.1
