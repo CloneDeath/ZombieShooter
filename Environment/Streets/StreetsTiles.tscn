@@ -1,11 +1,16 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Environment/Streets/Brick_Wall.vox" type="ArrayMesh" id=1]
 [ext_resource path="res://Environment/Streets/Brick_Wall_Corner.vox" type="ArrayMesh" id=2]
 [ext_resource path="res://Environment/Streets/Cement_Floor.vox" type="ArrayMesh" id=3]
+[ext_resource path="res://Environment/Streets/Sidewalk_Floor.vox" type="ArrayMesh" id=4]
+[ext_resource path="res://Environment/Streets/Street_Floor.vox" type="ArrayMesh" id=5]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.5, 0.5, 0.5 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.5, 0.4, 0.5 )
 
 [node name="StreetsTiles" type="Spatial"]
 
@@ -33,13 +38,38 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
 shape = SubResource( 1 )
 
 [node name="Cement_Floor" type="MeshInstance" parent="."]
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
 mesh = ExtResource( 3 )
 material/0 = null
 
 [node name="StaticBody" type="StaticBody" parent="Cement_Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Cement_Floor/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
 shape = SubResource( 1 )
+
+[node name="Sidewalk_Floor" type="MeshInstance" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Sidewalk_Floor"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Sidewalk_Floor/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+shape = SubResource( 1 )
+
+[node name="Street_Floor" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Street_Floor"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Street_Floor/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0 )
+shape = SubResource( 2 )
 

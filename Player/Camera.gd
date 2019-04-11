@@ -7,6 +7,7 @@ var MAX_Y = 89
 func _ready():
 	SENSITIVITY_Y = self.get_parent().Sensitivity_Y
 	MAX_Y = self.get_parent().Maximum_Y_Look
+	rotation = Vector3(0, 0, 0);
 	if self.get_parent().Invert_Y_Axis:
 		INVERSION_MULT = 1
 	else:

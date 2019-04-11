@@ -8,9 +8,5 @@ vec4 get_sample(vec2 offset, vec2 output_res, vec2 screen_uv, sampler2D screen_t
 
 void fragment() {
 	vec4 sample = get_sample(vec2(0.5, 0.5), resolution, SCREEN_UV, SCREEN_TEXTURE);
-	sample += get_sample(vec2(0.5, .25), resolution, SCREEN_UV, SCREEN_TEXTURE);
-	sample += get_sample(vec2(0.5, .75), resolution, SCREEN_UV, SCREEN_TEXTURE);
-	sample += get_sample(vec2(.25, 0.5), resolution, SCREEN_UV, SCREEN_TEXTURE);
-	sample += get_sample(vec2(.75, 0.5), resolution, SCREEN_UV, SCREEN_TEXTURE);
-	COLOR = sample / vec4(5, 5, 5, 1);
+	COLOR = sample / vec4(1, 1, 1, 1);
 }
