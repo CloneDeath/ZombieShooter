@@ -8,8 +8,9 @@
 radius = 0.4
 
 [node name="Player" type="KinematicBody"]
+collision_layer = 4
+collision_mask = 3
 script = ExtResource( 1 )
-Maximum_Y_Look = 60
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, 0.9, 0 )
@@ -20,5 +21,4 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0 )
 script = ExtResource( 2 )
 
 [node name="Gun" parent="Camera" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.136743, -0.272319, -0.277391 )
 

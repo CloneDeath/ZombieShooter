@@ -1,0 +1,14 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/Zombie_1.vox-62b0a1338f865f4b38f4311c4d3e4d59.mesh"
+
+[deps]
+
+source_file="res://Enemies/Zombie/Zombie_1.vox"
+dest_files=[ "res://.import/Zombie_1.vox-62b0a1338f865f4b38f4311c4d3e4d59.mesh" ]
+
+[params]
+
+Scale=0.1

@@ -1,0 +1,14 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/Fence_Wall.vox-5f2395c302aaf7f686319c1dab2aabb2.mesh"
+
+[deps]
+
+source_file="res://Environment/Streets/Fence_Wall.vox"
+dest_files=[ "res://.import/Fence_Wall.vox-5f2395c302aaf7f686319c1dab2aabb2.mesh" ]
+
+[params]
+
+Scale=0.1
