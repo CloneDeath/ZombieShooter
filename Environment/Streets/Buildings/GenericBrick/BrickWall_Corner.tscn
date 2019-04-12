@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Environment/Streets/Buildings/GenericBrick/BrickWall_Corner.vox" type="ArrayMesh" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.5, 0.5, 0.1 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.1, 0.5, 0.5 )
+
+[node name="BrickWall_Corner" type="Spatial"]
+
+[node name="BrickWall_Corner" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="BrickWall_Corner"]
+editor/display_folded = true
+
+[node name="CollisionShape" type="CollisionShape" parent="BrickWall_Corner/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.4 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2" type="StaticBody" parent="BrickWall_Corner"]
+editor/display_folded = true
+
+[node name="CollisionShape" type="CollisionShape" parent="BrickWall_Corner/StaticBody2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.5, 0 )
+shape = SubResource( 2 )
+

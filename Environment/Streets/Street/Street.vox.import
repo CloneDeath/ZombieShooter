@@ -1,0 +1,14 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/Street.vox-91be1a319846163e1f699cebf4392b19.mesh"
+
+[deps]
+
+source_file="res://Environment/Streets/Street/Street.vox"
+dest_files=[ "res://.import/Street.vox-91be1a319846163e1f699cebf4392b19.mesh" ]
+
+[params]
+
+Scale=0.1

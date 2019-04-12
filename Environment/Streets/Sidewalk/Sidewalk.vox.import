@@ -1,0 +1,14 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/Sidewalk.vox-92bff9c4131d603484719ea5fe75ec80.mesh"
+
+[deps]
+
+source_file="res://Environment/Streets/Sidewalk/Sidewalk.vox"
+dest_files=[ "res://.import/Sidewalk.vox-92bff9c4131d603484719ea5fe75ec80.mesh" ]
+
+[params]
+
+Scale=0.1

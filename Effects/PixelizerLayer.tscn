@@ -4,10 +4,9 @@
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )
-shader_param/resolution = Vector2( 85, 50 )
+shader_param/resolution = Vector2( 128, 75 )
 
 [node name="PixelizerLayer" type="CanvasLayer"]
-editor/display_folded = true
 
 [node name="Pixelizer" type="ColorRect" parent="."]
 material = SubResource( 1 )

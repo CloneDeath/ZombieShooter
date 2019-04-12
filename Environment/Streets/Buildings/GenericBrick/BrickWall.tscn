@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Environment/Streets/Buildings/GenericBrick/BrickWall.vox" type="ArrayMesh" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.5, 0.5, 0.1 )
+
+[node name="BrickWall" type="Spatial"]
+
+[node name="BrickWall" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="BrickWall"]
+
+[node name="CollisionShape" type="CollisionShape" parent="BrickWall/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.4 )
+shape = SubResource( 1 )
+

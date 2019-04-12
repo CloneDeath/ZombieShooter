@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Environment/Streets/Sidewalk/SidewalkLength.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Environment/Streets/Buildings/GenericBrick/GenericBrickBuilding.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Environment/Streets/Street/StreetLength.tscn" type="PackedScene" id=3]
+
+[node name="City" type="Spatial"]
+
+[node name="InnerBlock" type="Spatial" parent="."]
+
+[node name="SidewalkLength" parent="InnerBlock" instance=ExtResource( 1 )]
+length = 7
+direction = Vector3( 2, 0, 0 )
+
+[node name="SidewalkLength2" parent="InnerBlock" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 0 )
+length = 7
+direction = Vector3( 0, 0, -2 )
+
+[node name="SidewalkLength3" parent="InnerBlock" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -14 )
+length = 7
+direction = Vector3( -2, 0, 0 )
+
+[node name="SidewalkLength4" parent="InnerBlock" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14 )
+length = 7
+direction = Vector3( 0, 0, 2 )
+
+[node name="GenericBrickBuilding" parent="InnerBlock" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2 )
+
+[node name="StreetLength" parent="InnerBlock" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+length1 = 23
+
+[node name="StreetLength2" parent="InnerBlock" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 16, 0, 0 )
+length1 = 23
+
+[node name="StreetLength3" parent="InnerBlock" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 15, 0, -16 )
+length1 = 23
+
+[node name="StreetLength4" parent="InnerBlock" instance=ExtResource( 3 )]
+transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, -1, 0, -15 )
+length1 = 23
+
