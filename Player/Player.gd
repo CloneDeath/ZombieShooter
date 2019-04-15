@@ -52,7 +52,7 @@ func _physics_process(delta):
 	if is_on_floor():
 		if Input.is_action_just_pressed("ui_accept"):
 			velocity.y = Jump_Speed
-	velocity = move_and_slide_with_snap(velocity, Vector3(0, -.05, 0), Vector3(0,1,0))
+	velocity = move_and_slide_with_snap(velocity, Vector3(0, -.07, 0), Vector3(0,1,0))
 	
 func _input(event):
 	if event is InputEventMouseMotion:

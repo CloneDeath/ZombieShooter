@@ -1,0 +1,14 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/Cement.vox-248b897eca76156634df277ab41a5e45.mesh"
+
+[deps]
+
+source_file="res://Environment/Streets/Cement/Cement.vox"
+dest_files=[ "res://.import/Cement.vox-248b897eca76156634df277ab41a5e45.mesh" ]
+
+[params]
+
+Scale=0.1

@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Engine/SpatialNodeArea/SpatialNodeArea.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Environment/Streets/Street/Street.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Environment/Streets/Street/StreetLength.gd" type="Script" id=2]
+[ext_resource path="res://Environment/Streets/Street/Street.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Environment/Streets/Street/Street_CenterLine.tscn" type="PackedScene" id=4]
 
 [node name="StreetLength" index="0" instance=ExtResource( 1 )]
-length1 = 20
+script = ExtResource( 2 )
+length1 = 10
 length2 = 7
-unit = ExtResource( 2 )
+unit = ExtResource( 3 )
+divider_unit = ExtResource( 4 )
 

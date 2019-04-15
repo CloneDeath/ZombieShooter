@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Engine/SpatialNodeArea/SpatialNodeArea.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Environment/Streets/Cement/CementBlock.tscn" type="PackedScene" id=2]
+
+[node name="Cement" index="0" instance=ExtResource( 1 )]
+length1 = 4
+length2 = 4
+unit = ExtResource( 2 )
+

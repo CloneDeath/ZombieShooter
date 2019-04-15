@@ -2,10 +2,13 @@
 
 [ext_resource path="res://Environment/Streets/Buildings/GenericBrick/BrickWall.vox" type="ArrayMesh" id=1]
 [ext_resource path="res://Environment/Streets/Buildings/GenericBrick/BrickWall_Corner.vox" type="ArrayMesh" id=2]
-[ext_resource path="res://Environment/Streets/Cement_Floor.vox" type="ArrayMesh" id=3]
+[ext_resource path="res://Environment/Streets/Cement/Cement.vox" type="ArrayMesh" id=3]
 [ext_resource path="res://Environment/Streets/Sidewalk/Sidewalk.vox" type="ArrayMesh" id=4]
 [ext_resource path="res://Environment/Streets/Street/Street.vox" type="ArrayMesh" id=5]
-[ext_resource path="res://Environment/Streets/Fence_Wall.vox" type="ArrayMesh" id=6]
+[ext_resource path="res://Environment/Streets/Fence/Fence_Wall.vox" type="ArrayMesh" id=6]
+
+
+
 
 
 

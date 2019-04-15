@@ -6,4 +6,7 @@
 script = ExtResource( 1 )
 
 [node name="Units" type="Spatial" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
 

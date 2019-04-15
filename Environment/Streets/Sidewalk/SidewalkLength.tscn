@@ -4,5 +4,6 @@
 [ext_resource path="res://Environment/Streets/Sidewalk/SidewalkUnit.tscn" type="PackedScene" id=2]
 
 [node name="SidewalkLength" index="0" instance=ExtResource( 1 )]
+direction = Vector3( 2, 0, 0 )
 unit = ExtResource( 2 )
 
