@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Engine/SpatialNodeArea/SpatialNodeArea.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Environment/Streets/Fence/FenceBlock.tscn" type="PackedScene" id=2]
+
+[node name="Fence" index="0" instance=ExtResource( 1 )]
+length1 = 3
+length2 = 4
+direction2 = Vector3( 0, 1, 0 )
+unit = ExtResource( 2 )
+

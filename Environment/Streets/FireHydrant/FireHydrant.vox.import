@@ -1,0 +1,14 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/FireHydrant.vox-a45f257f2d9e7e4a11da06b751a8cedf.mesh"
+
+[deps]
+
+source_file="res://Environment/Streets/FireHydrant/FireHydrant.vox"
+dest_files=[ "res://.import/FireHydrant.vox-a45f257f2d9e7e4a11da06b751a8cedf.mesh" ]
+
+[params]
+
+Scale=0.1
