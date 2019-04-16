@@ -1,0 +1,14 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/StockIsle.vox-2dc8ad2d6d858a426e0d6911d9e6e4eb.mesh"
+
+[deps]
+
+source_file="res://Environment/Streets/Buildings/GenericStore/StockIsle/StockIsle.vox"
+dest_files=[ "res://.import/StockIsle.vox-2dc8ad2d6d858a426e0d6911d9e6e4eb.mesh" ]
+
+[params]
+
+Scale=0.1
