@@ -1,0 +1,14 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/WindowWall.vox-59d07ccca202233455f7f870f421d9e3.mesh"
+
+[deps]
+
+source_file="res://Environment/Streets/Buildings/GenericStore/WindowWall/WindowWall.vox"
+dest_files=[ "res://.import/WindowWall.vox-59d07ccca202233455f7f870f421d9e3.mesh" ]
+
+[params]
+
+Scale=0.1

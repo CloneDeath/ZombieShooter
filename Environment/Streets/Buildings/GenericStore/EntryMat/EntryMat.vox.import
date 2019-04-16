@@ -1,0 +1,14 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/EntryMat.vox-9c15c6ddfcf4ed45983d6b3665e9e4b4.mesh"
+
+[deps]
+
+source_file="res://Environment/Streets/Buildings/GenericStore/EntryMat/EntryMat.vox"
+dest_files=[ "res://.import/EntryMat.vox-9c15c6ddfcf4ed45983d6b3665e9e4b4.mesh" ]
+
+[params]
+
+Scale=0.1

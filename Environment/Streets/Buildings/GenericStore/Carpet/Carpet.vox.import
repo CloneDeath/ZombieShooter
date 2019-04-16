@@ -1,0 +1,14 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/Carpet.vox-97f08a19626aa343e7de2b84e239cf6e.mesh"
+
+[deps]
+
+source_file="res://Environment/Streets/Buildings/GenericStore/Carpet/Carpet.vox"
+dest_files=[ "res://.import/Carpet.vox-97f08a19626aa343e7de2b84e239cf6e.mesh" ]
+
+[params]
+
+Scale=0.1
